@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type= "text/css" href="assets/reset.css">
+        <link rel="stylesheet" type= "text/css" href="assets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets/game.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Crystals Collector!</h1>
+        <div class = "instructions">
+            <p>You will be given a random number at the start of the game.</p> </br>
+            <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p> </br>
+            <p>You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.</p> </br>
+            <p>The value of each crystal is hidden from you until you click on it.</p> </br>
+            <p>Each time when the game starts, the game will change the values of all of the crystals.</p>
+        </div>
+        <div class="wrapper">
+
+            <div class="crystal-number"></div>
+            <div class="wins-losses">
+                <p id = "wins">Wins: </p>
+                <p id = "losses">Losses: </p>
+            </div>
+        </div>
+        <div class="crystal-images">
+            <div class="crystal" id="opal">
+                <img src="assets/images/Opal.png" alt="Opal">
+            </div>
+            <div class="crystal" id="amethyst">
+                    <img src="assets/images/amethyst.png" alt="Amethyst">
+            </div>
+            <div class="crystal" id="quartz">
+                    <img src="assets/images/quartz.png" alt="Quartz">
+            </div>
+            <div class="crystal" id="topaz">
+                    <img src="assets/images/topaz.png" alt="Topaz">
+            </div>
+        </div>
+        <div class="score">
+            <h2>Your total score is:</h2>
+            <div class="crystal-score"></div>
+
+        </div>
+
+        <script>
+
+// $(document).ready(function(){//I need jQuery to run!
+ 
+//  var targetNumber = 0;
+//  var opalNumber = 0;
+//  var amethystNumber = 0;
+//  var quartzNumber = 0;
+//  var topazNumber = 0;
+//  var wins = 0; 
+//  var losses = 0; 
+//  var totalScore = 0;
+ 
+//  var resetGame = function(){
+//  targetNumber = Math.floor(Math.random() * (120 - 19 + 1) ) + 19;
+//  opalNumber = Math.floor(Math.random()*12)+1;
+//  amethystNumber = Math.floor(Math.random()*12)+1;
+//  quartzNumber = Math.floor(Math.random()*12)+1;
+//  topazNumber = Math.floor(Math.random()*12)+1;
+//  totalScore = 0;
+ 
+
+                
+//  $("#opal").attr('value', opalNumber);
+//  $("#amethyst").attr('value', amethystNumber);
+//  $("#quartz").attr('value', quartzNumber);
+//  $("#topaz").attr('value', topazNumber);
+//  $(".crystal-number").text(targetNumber);
+//  $(".crystal-score").text(totalScore);
+ 
+//             }
+
+ 
+//  resetGame();
+
+
+
+//  $(".crystal").click(function(){
+
+//      console.log($(this).attr('value'));
+//      totalScore += parseInt($(this).attr('value'));
+//      console.log(totalScore);
+//      $(".crystal-score").text(totalScore);
+
+//      if(totalScore ===targetNumber){
+//          alert("You win!");
+//          wins++;
+//         $("#wins").append(wins);
+//         resetGame();
+         
+//      }else if (totalScore>targetNumber){
+//          alert("You lose!"); 
+//          losses++;
+//          $("#losses").append(losses);
+//          resetGame();
+//      }
+
+
+//  });
+
+
+
+// });
+            
+        
+        </script>
+
+
+
+    </body>
+</html>
